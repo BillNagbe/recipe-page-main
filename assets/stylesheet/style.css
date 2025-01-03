@@ -39,10 +39,10 @@
 
 body {
     font-family: var(--ff-outfit);
-    font-size: var(--fs);
+    font-size: calc(var(--fs) / 2.5);
     display: var(--flexy);
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     color: var(--stone-900);
 }
@@ -54,19 +54,44 @@ h1, h2, h3, h4 {
 
 
 h1 {
-    color: hsl(0, 0%, 0%);
+    color: var(--stone-900);
+    letter-spacing: 1px;
+    font-size: var(--fs);
+    font-weight: normal;
 }
 
-h3, h4 {
-    font-size: calc(var(--fs) * 1.5);
-}
+
 h3, h4, li::marker{
     color: var(--brown-800);
+    font-weight: normal;
 }
 
 
 li::marker {
-    font-size: calc(var(--fs) / 1.3);
+    font-size: calc(var(--fs) / 3);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.border-bottom {
+    border-bottom: var(--bb);
+}
+
+ul:not(.aside-wrapper ul), ol {
+    padding-left: 0.5rem;
+}
+
+
+li {
+    padding-left: 0;
+}
+
+.flex-start {
+    
 }
 
 
@@ -81,7 +106,39 @@ li::marker {
 /** Large screens **/
 
 @media  screen and (max-width: 1440px) {
+
+    body{
+        background-color: var(--stone-100);
+    }
     
+    .main-wrapper {
+        width: 45%;
+        margin: 7.5vh auto;
+        border-radius: 10px;
+        background-color: var(--white);
+        height: 85vh;
+        overflow: hidden;
+        padding: 1rem;
+    }
+
+    .header-wrapper {
+        margin: .75rem auto;
+        display: var(--flexy);
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    
+    .aside-wrapper {
+        background-color: var(--rose-50);
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .aside-wrapper h4 {
+        
+        font-weight: bolder;
+    }
 }
 
 
