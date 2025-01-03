@@ -35,7 +35,7 @@
 }
 
 
-/** universal body **/
+/** universal css **/
 
 body {
     font-family: var(--ff-outfit);
@@ -46,6 +46,9 @@ body {
     justify-content: center;
 }
 
+h1, h2, h3, h4 {
+    font-family: var(--ff-young);
+}
 
 /** Small screens **/
 
