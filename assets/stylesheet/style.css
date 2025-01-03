@@ -35,6 +35,17 @@
 }
 
 
+/** universal body **/
+
+body {
+    font-family: var(--ff-outfit);
+    font-size: var(--fs);
+    display: var(--flexy);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /** Small screens **/
 
