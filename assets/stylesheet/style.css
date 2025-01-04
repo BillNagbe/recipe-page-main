@@ -40,4 +40,125 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+body {
+    min-height: 100vh;
+    background-color: var(--stone-100);
+    font-family: var(--ff-outfit);
+    font-weight: normal;
+    font-size: var(--fs);
+    color: var(--stone-600);
+}
 
+h1 {
+    font-family: var(--ff-young);
+    font-weight: normal;
+    color: var(--stone-900);
+}
+
+h2, h3, h4 {
+    font-family: var(--ff-young);
+    color: var(--rose-800);
+    font-weight: normal;
+    font-size: calc(var(--fs) * 1.5);
+}
+
+li::marker {
+    font-size: calc(var(--fs) / 1.2);
+    color: var(--rose-800);
+}
+
+img {
+    border-radius: 10px;
+}
+
+ul, li, ol {
+    padding: 0.5rem;
+}
+
+li {
+    padding-left: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.border-bottom {
+    border-bottom: var(--bb);
+}
+
+.main-wrapper {
+    background-color: var(--white);
+    width: 60%;
+    margin: 10vh auto;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.header-wrapper {
+    height: 10vh;
+    display: var(--flexy);
+    flex-direction: column;
+    justify-content: space-evenly;;
+}
+
+.header-wrapper p {
+    font-size: calc(var(--fs) / 1.2);
+}
+
+.aside-wrapper {
+    background-color: var(--rose-50);
+    padding: 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 11.5vh;
+}
+
+.aside-wrapper h4 {
+    padding-left: 0%;
+    font-size: var(--fs);
+}
+
+.ingredients-wrapper {
+    margin-top: 2vh;
+    height: 17vh;
+}
+
+.ingredients-wrapper h3 {
+    font-size: calc(var(--fs) * 1.5);
+
+}
+
+
+.instructions-wrapper {
+    margin-top: 2.5vh;
+    height: 17vh;
+    border-bottom: var(--bb);
+}
+
+.nutrition-wrapper {
+    margin-top: 14vh;
+    height: 17vh;
+    border-top: var(--bb);
+    padding: 1rem;
+    display: var(--flexy);
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+tr {
+    
+}
+td {
+    width: 100%;
+    padding: 0.5rem;
+    float: left;
+}
+
+td .bold {
+    color: var(--rose-800);
+    padding-left: 33%;
+
+}
