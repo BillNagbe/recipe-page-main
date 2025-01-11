@@ -79,7 +79,7 @@ h3 {
 
 /* Small Screen */
 
-@media screen and (max-width: 375px) {
+
 
     /* General styles  */
 
@@ -266,4 +266,77 @@ h3 {
      }
 
 
-}
+     /* Large Screen  */
+
+     @media screen and (min-width:376px) and (max-width: 1440px) {
+        /* Body */
+        body {
+            background-color: var(--stone-100);
+            height: 100vh;
+        }
+
+        /* Main container */
+
+        .main-container {
+            background-color: var(--white);
+            border-radius: 25px;
+            width: 60%;
+            height: 80%;
+            margin: 5vh auto;
+            padding: 2rem;
+            gap: 0.25rem;
+        }
+
+        .main-header-container {
+            width: 100%;
+            font-size: var(--fs);
+        }
+
+        .figure-container {
+            width: 100%;
+            border-radius: 25px;
+        }
+
+
+        .figure-container  img {
+            border-radius: 10px;
+        }
+
+        .header-content-container {
+            margin: 2vh auto;
+            padding: 0.25rem;
+            width: 100%;
+            font-size: var(--fs);
+            white-space: nowrap;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .header-content-container h1 {
+            width: 100%;
+            font-size: 1.85rem;
+            height: fit-content;
+            padding: 0;
+            display: inline;
+        }
+
+        .header-content-container h1 span {
+            letter-spacing: 0;
+        }
+
+        /* Prep */
+
+        .prep-container {
+            padding: 1rem;
+            width: 100%;
+            margin-top: 0;
+            outline: 1px solid;
+        }
+
+        /* Att */
+
+        .attribution {
+            background-color: var(--white);
+            width: 40%;
+        }
+     }
