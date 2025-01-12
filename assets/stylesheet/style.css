@@ -32,6 +32,11 @@
     --flexy: flex;
     --space-btw: space-between;
     --space-arnd: space-around;
+
+    /* round borders */
+
+    --bold-round: 25px;
+    --lite-round: 10px;
 }
 
 
@@ -273,70 +278,93 @@ h3 {
         body {
             background-color: var(--stone-100);
             height: 100vh;
+            display: grid;
+            grid-template-columns: 100%;
+            place-content: center;
         }
 
         /* Main container */
-
         .main-container {
+            width: 72%;
             background-color: var(--white);
-            border-radius: 25px;
-            width: 60%;
-            height: 80%;
-            margin: 5vh auto;
+            margin: 5rem auto;
             padding: 2rem;
-            gap: 0.25rem;
+            border-radius: var(--bold-round);
         }
 
         .main-header-container {
+            margin-top: 2vh;
             width: 100%;
-            font-size: var(--fs);
-        }
-
-        .figure-container {
-            width: 100%;
-            border-radius: 25px;
-        }
-
-
-        .figure-container  img {
-            border-radius: 10px;
-        }
-
-        .header-content-container {
-            margin: 2vh auto;
-            padding: 0.25rem;
-            width: 100%;
-            font-size: var(--fs);
-            white-space: nowrap;
-            display: flex;
             gap: 1rem;
         }
 
-        .header-content-container h1 {
+
+
+        .figure-container img {
+            border-radius: var(--lite-round);
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .header-content-container {
             width: 100%;
-            font-size: 1.85rem;
-            height: fit-content;
-            padding: 0;
+        }
+
+
+        .header-content-container span.h1, .header-content-container h1 {
+            letter-spacing: -0.05rem;
+        }
+
+
+        .header-content-container h1 {
             display: inline;
+            width: 100%;
+            font-weight: 550;
+            font-size: clamp(1rem, 2.7rem, 3rem);
         }
 
-        .header-content-container h1 span {
-            letter-spacing: 0;
-        }
 
-        /* Prep */
 
         .prep-container {
-            padding: 1rem;
             width: 100%;
-            margin-top: 0;
-            outline: 1px solid;
+            height: fit-content;
+            padding: 1.75rem;
+            gap: 1rem;
         }
 
-        /* Att */
+        .prep-container ul {
+            height: 100%;
+            width: 100%;
+        }
 
-        .attribution {
-            background-color: var(--white);
-            width: 40%;
+        .prep-container ul li {
+            padding: 0.25rem;
+            padding-left: 1rem;
+        }
+
+        .ingredients-container {
+            width: 100%;
+            
+        }
+
+        .ingredients-container h3 {
+            width: 100%;
+            height: 2.25vh;
+        }
+
+        .ingredients-container ul {
+            margin-top: -2rem;
+        }
+
+        .instru-container {
+            width: 100%;
+        }
+
+        .nutri-container {
+            width: 100%;
+        }
+        
+        .table-wrapper {
+            text-align: left;
         }
      }
