@@ -41,3 +41,91 @@
 
 
 /** universal css **/
+
+body {
+    font-family: var(--ff-outfit);
+    font-size: var(--fs);
+    color: var(--stone-900);
+}
+
+.main-container, .img-container, .title-container, .preperpation-container, .nutrition-container, .ingredients-container, .instruction-container {
+    display: var(--flexy);
+    flex-direction: column;
+}
+
+h3, h4, li::marker {
+    color: var(--rose-800);
+}
+
+h1 {
+    font-family: var(--ff-young);
+}
+
+
+@media screen and (max-width: 376px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        place-content: center;
+        place-items: center;
+        background-color: var(--stone-900);
+        min-height: 100vh;
+        width: 100vw;
+        font-size: 0.43rem;
+    }
+
+    li::marker {
+        font-size: 0.4rem;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+
+    .main-container {
+        width: 50vw;
+        margin: 0 auto;
+        background-color: var(--white);
+        min-height: fit-content;
+    }
+
+    .title-container {
+        padding: 0.75rem;
+        gap: 0.5rem;
+        margin: 0 auto;
+    }
+
+    .img-container {
+        padding: 0;
+    }
+
+    .title-container h1 {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        line-height: 1rem;
+    }
+
+    .title-container h1 span {
+        white-space: nowrap;
+    }
+
+    .preperpation-container {
+        background-color: var(--rose-50);
+        padding: 0.5rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .preperpation-container ul {
+        padding: 0.25rem;
+        padding-left: 1rem;
+    }
+
+    .preperpation-container ul li {
+        padding: 0.2rem;
+        white-space: wrap;
+    }
+
+}
